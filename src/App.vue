@@ -305,6 +305,7 @@ export default {
   width: 100%;
   position: relative;
 }
+
 .event:before {
   position: absolute;
   bottom: 0;
@@ -313,7 +314,22 @@ export default {
   height: 6em;
   content: "";
   z-index: 1;
-  background: linear-gradient(to top, #fff 0%, transparent 100%);
+  background: -moz-linear-gradient(
+    top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
 }
 @keyframes scrolling {
   0% {
