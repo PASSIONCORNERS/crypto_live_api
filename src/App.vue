@@ -517,53 +517,55 @@
     </ul>
   </div>
   <!-- ============ Events ============ -->
-  <div class="container mx-auto py-4 lg:py-24 flex flex-wrap justify-center ">
-    <!-- 1 -->
-    <a href="#" class="rounded m-6" target="_blank">
-      <img
-        src="https://source.unsplash.com/random/10"
-        alt="event image"
-        class="w-96 h-52 mx-auto object-cover rounded"
-      />
-      <div class="pt-2 w-96">
-        <p class="font-medium pt-2">Lorem Ipsum</p>
-        <p class="text-xs pt-2 w-3/4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, error.
-          Facilis temporibus ratione obcaecati nulla!
-        </p>
-      </div>
-    </a>
-    <!-- 2 -->
-    <a href="#" class="rounded m-6" target="_blank">
-      <img
-        src="https://source.unsplash.com/random/11"
-        alt="event image"
-        class="w-96 h-52 mx-auto object-cover rounded"
-      />
-      <div class="pt-2 w-96">
-        <p class="font-medium pt-2">Lorem Ipsum</p>
-        <p class="text-xs pt-2 w-3/4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, error.
-          Facilis temporibus ratione obcaecati nulla!
-        </p>
-      </div>
-    </a>
-    <!-- 3 -->
-    <a href="#" class="rounded m-6" target="_blank">
-      <img
-        src="https://source.unsplash.com/random/12"
-        alt="event image"
-        class="w-96 h-52 mx-auto object-cover rounded"
-      />
-      <div class="pt-2 w-96">
-        <p class="font-medium pt-2">Lorem Ipsum</p>
-        <p class="text-xs pt-2 w-3/4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, error.
-          Facilis temporibus ratione obcaecati nulla!
-        </p>
-      </div>
-    </a>
-  </div>
+  <section class="event">
+    <div class="container mx-auto py-4 lg:py-24 flex flex-wrap justify-center ">
+      <!-- 1 -->
+      <a href="#" class="rounded m-6" target="_blank">
+        <img
+          src="https://source.unsplash.com/random/10"
+          alt="event image"
+          class="w-80 h-52 mx-auto object-cover rounded"
+        />
+        <div class="pt-2 w-80">
+          <p class="font-medium pt-2">Lorem Ipsum</p>
+          <p class="text-xs pt-2 w-3/4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+            error. Facilis temporibus ratione obcaecati nulla!
+          </p>
+        </div>
+      </a>
+      <!-- 2 -->
+      <a href="#" class="rounded m-6" target="_blank">
+        <img
+          src="https://source.unsplash.com/random/11"
+          alt="event image"
+          class="w-80 h-52 mx-auto object-cover rounded"
+        />
+        <div class="pt-2 w-80">
+          <p class="font-medium pt-2">Lorem Ipsum</p>
+          <p class="text-xs pt-2 w-3/4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+            error. Facilis temporibus ratione obcaecati nulla!
+          </p>
+        </div>
+      </a>
+      <!-- 3 -->
+      <a href="#" class="rounded m-6" target="_blank">
+        <img
+          src="https://source.unsplash.com/random/12"
+          alt="event image"
+          class="w-80 h-52 mx-auto object-cover rounded"
+        />
+        <div class="pt-2 w-80">
+          <p class="font-medium pt-2">Lorem Ipsum</p>
+          <p class="text-xs pt-2 w-3/4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+            error. Facilis temporibus ratione obcaecati nulla!
+          </p>
+        </div>
+      </a>
+    </div>
+  </section>
   <!-- ============ Table ============ -->
   <div class="container mx-auto pt-18 pb-48 px-2">
     <!-- search -->
@@ -928,7 +930,23 @@ export default {
   right: 0;
   background: linear-gradient(to left, #111 0%, transparent 100%);
 }
-
+.event {
+  background-image: url("./assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+}
+.event:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6em;
+  content: "";
+  z-index: 1;
+  background: linear-gradient(to top, #fff 0%, transparent 100%);
+}
 @keyframes scrolling {
   0% {
     transform: translateX(0);
