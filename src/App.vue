@@ -13,7 +13,7 @@
             <img
               src="https://source.unsplash.com/random/1"
               alt="coin logo"
-              class="w-4 h-4 lg:w-6 lg:h-6 rounded-full mr-4 "
+              class="w-4 h-4 lg:w-6 lg:h-6 rounded-full mr-4 object-cover"
             />
             <div class="hidden lg:block">
               <p class="font-bold">Bitcoin</p>
@@ -47,7 +47,7 @@
             <img
               src="https://source.unsplash.com/random/2"
               alt="coin logo"
-              class="w-4 h-4 lg:w-6 lg:h-6 rounded-full mr-4 "
+              class="w-4 h-4 lg:w-6 lg:h-6 rounded-full mr-4 object-cover"
             />
             <div class="hidden lg:block">
               <p class="font-bold">Bitcoin</p>
