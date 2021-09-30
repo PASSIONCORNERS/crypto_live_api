@@ -14,7 +14,7 @@
             <img
               :src="coin.image"
               alt="coin logo"
-              class="w-4 h-4 lg:w-6 lg:h-6 rounded-full mr-4 "
+              class="w-4 h-4 lg:w-6 lg:h-6 rounded-full mr-4 object-cover"
             />
             <div class="hidden lg:block">
               <p class="font-bold">{{ coin.name }}</p>
@@ -61,7 +61,7 @@
             <img
               :src="clone.image"
               alt="coin logo"
-              class="w-4 h-4 lg:w-6 lg:h-6 rounded-full mr-4 "
+              class="w-4 h-4 lg:w-6 lg:h-6 rounded-full mr-4 object-cover"
             />
             <div class="hidden lg:block">
               <p class="font-bold">{{ clone.name }}</p>
