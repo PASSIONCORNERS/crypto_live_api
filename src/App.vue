@@ -207,7 +207,7 @@ export default {
   name: "App",
   setup() {
     // selectors
-    const mq = ref(null);
+
     const clones = ref(null);
     const coins = ref([]);
     const search = ref("");
