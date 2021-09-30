@@ -245,8 +245,7 @@ export default {
     });
     // first 10
     const tenItems = computed(() => {
-      const coin = coins.value.slice(0, 10);
-      return coin;
+      return coins.value.slice(0, 10);
     });
     // search
     const matchingNames = computed(() => {
@@ -255,8 +254,6 @@ export default {
 
     // return
     return {
-      coins,
-      mq,
       clones,
       tenItems,
       search,
