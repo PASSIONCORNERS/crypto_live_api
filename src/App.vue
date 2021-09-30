@@ -207,7 +207,6 @@ export default {
   name: "App",
   setup() {
     // selectors
-
     const clones = ref(null);
     const coins = ref([]);
     const search = ref("");
